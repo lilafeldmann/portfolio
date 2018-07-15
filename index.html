@@ -14,7 +14,7 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<section id="header" style=background-color:mediumseagreen>
+			<section id="header" style=background-color:lightseagreen>
 				<header style=background-colormidnightblue>
 					<span class="image avatar"><img src="images/profilepicture.JPG" alt="" /></span>
 					<h1 id="logo"><a href="#">Lila Feldmann</a></h1>
@@ -59,7 +59,7 @@
 									<p style="color:navy;font-size:24ptx"> Feel free to take a second and look through all of the projects that I've created this summer. </p>
 								</div>
 							</section>
-<section id="three" style="background-color:powderblue">
+							<section id="three" style="background-color:powderblue">
 								<div class="container">
 									<h3 style=color:slateblue> A Few Accomplishments</h3>
 									<p>These are a few things that I have worked really hard to make happen on my programming journey. Enjoy!</p>
@@ -67,7 +67,7 @@
 										<article>
 											<a href="#" class="image"><img src="images/colorcloud.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
+												<h4>{}</h4>
 												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
 											</div>
 										</article>
@@ -96,18 +96,60 @@
 									<ul class="feature-icons">
 										<li class="fa-cubes">Edit text on a website template</li>
 										<li class="fa-cubes">Change template icons </li>
-										<li class="fa-book">Read books and stuff</li>
+										<li class="fa-book">successfully binge watch an entire netflix tv show in a day</li>
 										<li class="fa-coffee">Drink much coffee</li>
 										<li class="fa-bolt">Lightning bolt</li>
 										<li class="fa-users">Shadow clone technique</li>
 									</ul>
 								</div>
 							</section>
+							<!DOCTYPE html>
+<section id= "clap" style = "background-color:aquamarine">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Clap for Me!!</title>
+    <script src="vue.js"></script>
+    <style>
+      body {
+        background-color: cyan;
+      }
+      #app {
+        text-align: center;
+        padding-top: 150px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button @click/v-on:click="increase"> 
+        <!-- you could apply the @click/v-on:click to this or the image, the button just gives a nice effects -->
+        <src="clappingPic.jpeg"
+        <p> Clap for Me!</p>
+	  </button>
+    </div>
+  <script>
+    new Vue({
+      el: '#clap',
+      data: {
+        counter: 0
+      },
+      methods: {
+        increase: function() {
+          this.counter=this.counter+1;
+        }
+      }
+
+    })
+  </script>
+  </body>
+</html>
+</section>
 <!-- Four -->
 <section id="four" style="background-color:palegoldenrod">
 		<div class="container">
 			<h3>Contact Me</h3>
-			<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+			<p>If you want to send me amessage or an email just use the box below!!</p>
 			<form method="post" action="#">
 				<div class="row gtr-uniform">
 					<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -124,13 +166,28 @@
 			</form>
 		</div>
 	</section>
-						
+	<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://facebook.us18.list-manage.com/subscribe/post?u=8438cea50432555018e8238e8&amp;id=864a1f787f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8438cea50432555018e8238e8_864a1f787f" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
 
-						
-
-						<!-- Five -->
-						<!--
-							<section id="five">
+<!--End mc_embed_signup-->
+<!-- Five -->
+							<!--section id="five">
 								<div class="container">
 									<h3>Elements</h3>
 
@@ -161,17 +218,20 @@
 										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
 										<h5>Preformatted</h5>
 										<pre><code>i = 0;
-
+										</section>						
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./vue.js"></script>
+						
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
     deck.shuffle();
     i++;
 }
-
+<!--random-->
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</section>
 
-									<section>
+								<!--section>
 										<h4>Lists</h4>
 										<div class="row">
 											<div class="col-6 col-12-xsmall">
